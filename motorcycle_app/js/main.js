@@ -3,20 +3,33 @@ var swiper = new Swiper(".bike-slider", {
     spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
+        dynamicBullets: true,
         clickable: true,
     },
+    autoplay:{
+        delay: 5000, 
+        disableOnInteraction: false, 
+    },
     breakpoints: {
-        640: {
+        280: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        510: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
         },
-        768: {
+        758: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        900: {
             slidesPerView: 4,
-            spaceBetween: 40,
-        },
-        1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 20,
         },
     },
 });
